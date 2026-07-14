@@ -111,7 +111,7 @@ export default function Hero() {
               <h1
                 className={cn(
                   "font-display uppercase tracking-[-0.05em] whitespace-nowrap",
-                  "text-[min(3rem,11.5vw)] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[min(10rem,17.5vh)] leading-none",
+                  "text-[min(3rem,11.5vw)] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[min(10rem,17.5vh)] leading-[1.1] sm:leading-none",
                   "-mt-2 sm:-mt-1 md:-mt-2",
                   HERO.titleLines[0].tone,
                 )}
@@ -124,7 +124,7 @@ export default function Hero() {
             <h1
               className={cn(
                 "font-display uppercase tracking-[-0.05em] whitespace-nowrap",
-                "text-[min(3rem,11.5vw)] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[min(10rem,17.5vh)] leading-none",
+                "text-[min(3rem,11.5vw)] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[min(10rem,17.5vh)] leading-[1.1] sm:leading-none",
                 "-mt-3 sm:-mt-2 md:-mt-3 lg:-mt-4 xl:-mt-5",
                 HERO.titleLines[1].tone,
               )}
@@ -136,7 +136,7 @@ export default function Hero() {
             <h1
               className={cn(
                 "font-display uppercase tracking-[-0.05em] whitespace-nowrap",
-                "text-[min(3rem,11.5vw)] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[min(10rem,17.5vh)] leading-none",
+                "text-[min(3rem,11.5vw)] sm:text-7xl md:text-8xl lg:text-9xl xl:text-[min(10rem,17.5vh)] leading-[1.1] sm:leading-none",
                 "-mt-3 sm:-mt-2 md:-mt-3 lg:-mt-4 xl:-mt-5",
                 HERO.titleLines[2].tone,
               )}
