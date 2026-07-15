@@ -103,7 +103,7 @@ export default function Contact() {
                 type="button"
                 onClick={copyEmail}
                 aria-label={copied ? "Email copied" : "Copy email address"}
-                className="rounded-full border border-black/30 p-2 transition-colors duration-300 hover:bg-black hover:text-tech-medium"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-black/30 transition-colors duration-300 hover:bg-black hover:text-tech-medium"
               >
                 {copied ? (
                   <Check aria-hidden className="h-4 w-4" />

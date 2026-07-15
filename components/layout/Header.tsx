@@ -64,13 +64,13 @@ export default function Header() {
               <a
                 href={item.href}
                 onClick={scrollTo(item.href)}
-                className="group relative inline-block"
+                className="group relative inline-block -my-4 py-4"
                 aria-current={active === item.href.slice(1) ? "true" : undefined}
               >
                 <FlipText>{item.label}</FlipText>
                 <span
                   className={cn(
-                    "absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-tech-medium transition-transform duration-300 ease-out group-hover:scale-x-100",
+                    "absolute bottom-2 left-0 h-px w-full origin-left scale-x-0 bg-tech-medium transition-transform duration-300 ease-out group-hover:scale-x-100",
                     active === item.href.slice(1) && "scale-x-100",
                   )}
                 />
