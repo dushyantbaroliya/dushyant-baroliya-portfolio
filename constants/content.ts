@@ -160,44 +160,14 @@ export const ABOUT_INTRO = {
 
 export const PROJECTS: Project[] = [
   {
-    id: "ai-operating-system",
-    category: "AI Product",
-    title: "AI Operating System",
-    description:
-      "A unified AI workspace that orchestrates agents, files, and tools into a single operating layer, built for people who think faster than they type.",
-    stack: ["Next.js", "TypeScript", "Python", "FastAPI", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/dushyantbaroliya/ai-operating-system",
-  },
-  {
-    id: "personal-finance-dashboard",
-    category: "FinTech",
-    title: "Personal Finance Dashboard",
-    description:
-      "A privacy-first dashboard that turns raw transactions into clear insight: budgets, trends, and net-worth tracking in one elegant view.",
-    stack: ["React", "Node.js", "Express", "MongoDB", "Recharts", "Tailwind CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/dushyantbaroliya/personal-finance-dashboard",
-  },
-  {
-    id: "algorithm-visualizer",
-    category: "Web App",
-    title: "Algorithm Visualizer",
-    description:
-      "An interactive playground that animates sorting, graphs, and pathfinding step by step, making abstract algorithms feel tangible.",
-    stack: ["TypeScript", "React", "Framer Motion", "Canvas API"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/dushyantbaroliya/algorithm-visualizer",
-  },
-  {
-    id: "quant-trading-simulator",
+    id: "ledger",
     category: "Quant Finance",
-    title: "Quant Trading Simulator",
+    title: "Ledger",
     description:
-      "A backtesting engine and paper-trading sandbox for exploring quantitative strategies with real market data and honest risk metrics.",
-    stack: ["Python", "Pandas", "NumPy", "FastAPI", "PostgreSQL", "Next.js"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/dushyantbaroliya/quant-trading-simulator",
+      "A deterministic limit-order-book matching engine written in Rust and compiled to WebAssembly — a live market microstructure lab running entirely in your browser, with a terminal-grade depth ladder, tape, and order entry.",
+    stack: ["Rust", "WebAssembly", "TypeScript", "React", "Canvas API"],
+    liveUrl: "https://dushyantbaroliya.github.io/ledger/",
+    githubUrl: "https://github.com/dushyantbaroliya/ledger",
   },
   {
     id: "developer-portfolio",
@@ -206,18 +176,8 @@ export const PROJECTS: Project[] = [
     description:
       "The site you are looking at: a pixel-obsessed, motion-driven portfolio engineered for speed, accessibility, and a little delight.",
     stack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "Lenis"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/dushyantbaroliya/developer-portfolio",
-  },
-  {
-    id: "machine-learning-projects",
-    category: "Machine Learning",
-    title: "Machine Learning Projects",
-    description:
-      "A growing collection of ML experiments, from predictive models to computer vision, documented and open for anyone to learn from.",
-    stack: ["Python", "PyTorch", "scikit-learn", "Jupyter", "NumPy"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/dushyantbaroliya/machine-learning-projects",
+    liveUrl: "/",
+    githubUrl: "https://github.com/dushyantbaroliya/dushyant-baroliya-portfolio",
   },
 ];
 
