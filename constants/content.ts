@@ -38,7 +38,7 @@ import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 export const SITE = {
   name: "Dushyant Baroliya",
   initials: "DB",
-  url: "https://dushyantbaroliya.com",
+  url: "https://dushyant-portfolio-pi.vercel.app",
   email: "dushyantbaroliya2@gmail.com",
   location: "India",
   timeZone: "Asia/Kolkata",
