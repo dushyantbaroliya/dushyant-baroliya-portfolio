@@ -170,6 +170,16 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/dushyantbaroliya/ledger",
   },
   {
+    id: "signal",
+    category: "Interactive Essay",
+    title: "Signal",
+    description:
+      "An interactive essay on how options think — from the payoff hockey stick through the Greeks to the volatility smile, every figure hand-drawn in canvas and computed live, including a drag-to-rotate 3D volatility surface built without WebGL.",
+    stack: ["TypeScript", "Canvas API", "Vite", "Black-Scholes"],
+    liveUrl: "https://dushyantbaroliya.github.io/signal/",
+    githubUrl: "https://github.com/dushyantbaroliya/signal",
+  },
+  {
     id: "developer-portfolio",
     category: "Website",
     title: "Developer Portfolio",
