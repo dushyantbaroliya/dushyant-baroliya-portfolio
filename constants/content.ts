@@ -27,6 +27,8 @@ import {
   SiFigma,
   SiLinux,
   SiMysql,
+  SiRust,
+  SiWebassembly,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
@@ -44,7 +46,7 @@ export const SITE = {
   timeZone: "Asia/Kolkata",
   resumeUrl: "/files/Dushyant-Baroliya-Resume.pdf",
   description:
-    "Portfolio of Dushyant Baroliya, mechanical engineering student and full stack developer building AI-powered products and finance-driven applications.",
+    "Portfolio of Dushyant Baroliya — building AI products, market infrastructure in Rust and WebAssembly, and interactive essays on quantitative finance.",
 } as const;
 
 export const SOCIALS: SocialLink[] = [
@@ -74,22 +76,22 @@ export const HERO = {
     { text: "Developer", tone: "text-tech-dark" },
   ],
   rotatingTitles: [
-    "Mechanical Engineering Enthusiast",
-    "AI & Finance Enthusiast",
-    "Full Stack Developer",
-    "Quantitative Finance Enthusiast",
+    "Rust · WebAssembly · TypeScript",
+    "Market Microstructure & Options",
+    "On-Device AI Products",
+    "Interfaces That Teach",
   ],
   description: [
-    { text: "I enjoy building " },
-    { text: "beautiful software", bold: true },
+    { text: "I build " },
+    { text: "AI products", bold: true },
     { text: ", " },
-    { text: "AI-powered products", bold: true },
+    { text: "market infrastructure", bold: true },
     { text: ", and " },
-    { text: "finance-driven applications", bold: true },
-    { text: ". I love turning " },
-    { text: "complex ideas", bold: true },
-    { text: " into " },
-    { text: "elegant experiences", bold: true },
+    { text: "interactive essays", bold: true },
+    { text: " — like a " },
+    { text: "Rust matching engine", bold: true },
+    { text: " that runs live in your browser. Everything below is " },
+    { text: "real, tested, and deployed", bold: true },
     { text: "." },
   ] satisfies StatementSegment[],
 } as const;
@@ -127,18 +129,17 @@ export const ABOUT_STATEMENT: StatementSegment[] = [
 export const PROJECTS_INTRO = {
   label: "/ Projects",
   blurb: [
-    { text: "These projects trace how I turn ideas into execution, blending " },
-    { text: "engineering with imagination", bold: true },
-    { text: "." },
+    { text: "Nothing here is a mockup: every project ships with a " },
+    { text: "live demo and public source", bold: true },
+    { text: ". Click through and break things." },
   ] satisfies StatementSegment[],
   chips: [
-    "Web Development",
+    "Rust & WebAssembly",
+    "Market Microstructure",
     "AI Products",
     "Quantitative Finance",
-    "Full Stack",
-    "Machine Learning",
     "Data Visualization",
-    "Experiments",
+    "Interactive Essays",
   ],
 } as const;
 
@@ -196,6 +197,8 @@ export const PROJECTS: Project[] = [
 /* ------------------------------------------------------------------ */
 
 export const TECH_LOGOS: TechLogo[] = [
+  { name: "Rust", icon: SiRust },
+  { name: "WebAssembly", icon: SiWebassembly },
   { name: "React", icon: SiReact },
   { name: "Next.js", icon: SiNextdotjs },
   { name: "TypeScript", icon: SiTypescript },
@@ -220,6 +223,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "Languages",
     skills: [
+      { name: "Rust", icon: SiRust, color: "#CE412B" },
       { name: "C++", icon: SiCplusplus, color: "#00599C" },
       { name: "Python", icon: SiPython, color: "#3776AB" },
       { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
