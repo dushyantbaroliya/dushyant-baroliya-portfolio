@@ -147,7 +147,7 @@ export default function Hero() {
 
           {/* Rotating role + description + CTAs */}
           <motion.div
-            className="mt-6 w-10/12 text-center md:w-8/12 2xl:w-6/12 xl:translate-x-24"
+            className="mt-6 w-10/12 text-center md:w-8/12 2xl:w-6/12"
             initial={{ opacity: 0, y: 30 }}
             animate={done ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.9, ease: EASE, delay: 0.75 }}
