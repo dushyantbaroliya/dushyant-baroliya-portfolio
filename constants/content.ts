@@ -40,7 +40,7 @@ import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 export const SITE = {
   name: "Dushyant Baroliya",
   initials: "DB",
-  url: "https://dushyant-portfolio-pi.vercel.app",
+  url: "https://dushyant-portfolio.vercel.app",
   email: "dushyantbaroliya2@gmail.com",
   location: "India",
   timeZone: "Asia/Kolkata",
@@ -129,8 +129,10 @@ export const ABOUT_STATEMENT: StatementSegment[] = [
 export const PROJECTS_INTRO = {
   label: "/ Projects",
   blurb: [
-    { text: "Nothing here is a mockup: every project ships with a " },
+    { text: "Nothing here is a mockup: what's shipped comes with a " },
     { text: "live demo and public source", bold: true },
+    { text: ", and what's in progress is " },
+    { text: "real, tested, and running", bold: true },
     { text: ". Click through and break things." },
   ] satisfies StatementSegment[],
   chips: [
@@ -160,6 +162,15 @@ export const ABOUT_INTRO = {
 /* ------------------------------------------------------------------ */
 
 export const PROJECTS: Project[] = [
+  {
+    id: "lazr",
+    category: "On-Device AI",
+    status: "In Progress",
+    title: "LAZR",
+    description:
+      "A privacy-first, local-first personal intelligence app: on-device AI that indexes your files, screenshots, and notes and answers questions about them — grounded only in your own data, with citations. No accounts, no telemetry, no data ever leaves the device. Currently running on-device with an airplane-mode guarantee as a hard test gate.",
+    stack: ["Flutter", "Dart", "Riverpod", "SQLite", "On-Device LLM", "Vector Search"],
+  },
   {
     id: "ledger",
     category: "Quant Finance",

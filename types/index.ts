@@ -17,8 +17,12 @@ export interface Project {
   title: string;
   description: string;
   stack: string[];
-  liveUrl: string;
-  githubUrl: string;
+  /** Live demo URL. Omit for unshipped / in-progress work. */
+  liveUrl?: string;
+  /** Public source URL. Omit for private / in-progress work. */
+  githubUrl?: string;
+  /** Optional short badge, e.g. "In Progress". Marks work that isn't shipped yet. */
+  status?: string;
   /** Optional real screenshot; falls back to a styled placeholder. */
   image?: string;
 }

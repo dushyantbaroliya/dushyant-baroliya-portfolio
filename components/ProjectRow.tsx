@@ -67,8 +67,14 @@ export default function ProjectRow({
           <span>{number}</span>
         </div>
         <div className="w-full">
-          <div className="text-sm xl:text-base font-extralight tracking-wider ml-1">
-            {project.category}
+          <div className="ml-1 flex items-center gap-3 text-sm font-extralight tracking-wider xl:text-base">
+            <span>{project.category}</span>
+            {project.status && (
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-current/40 px-2.5 py-0.5 text-[10px] uppercase tracking-widest xl:text-xs">
+                <span className="h-1.5 w-1.5 rounded-full bg-current" aria-hidden />
+                {project.status}
+              </span>
+            )}
           </div>
           <div className="mb-2 font-light">{project.title}</div>
         </div>
@@ -110,31 +116,40 @@ export default function ProjectRow({
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <MagneticButton>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${project.title} — live demo`}
-                      className={buttonVariants()}
-                    >
-                      Live Demo
-                      <ArrowUpRight aria-hidden />
-                    </a>
-                  </MagneticButton>
-                  <MagneticButton>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${project.title} — source on GitHub`}
-                      className={buttonVariants({ variant: "outline" })}
-                    >
-                      GitHub
-                      <FaGithub aria-hidden />
-                    </a>
-                  </MagneticButton>
+                <div className="mt-8 flex flex-wrap items-center gap-3">
+                  {project.liveUrl && (
+                    <MagneticButton>
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${project.title} — live demo`}
+                        className={buttonVariants()}
+                      >
+                        Live Demo
+                        <ArrowUpRight aria-hidden />
+                      </a>
+                    </MagneticButton>
+                  )}
+                  {project.githubUrl && (
+                    <MagneticButton>
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${project.title} — source on GitHub`}
+                        className={buttonVariants({ variant: "outline" })}
+                      >
+                        GitHub
+                        <FaGithub aria-hidden />
+                      </a>
+                    </MagneticButton>
+                  )}
+                  {!project.liveUrl && !project.githubUrl && (
+                    <span className="text-sm font-light text-slate-400">
+                      In active development — demo and source coming soon.
+                    </span>
+                  )}
                 </div>
               </div>
               <ImagePlaceholder index={index} title={project.title} src={project.image} />
