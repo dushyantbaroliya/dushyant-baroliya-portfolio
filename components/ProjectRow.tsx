@@ -123,7 +123,7 @@ export default function ProjectRow({
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`${project.title} — live demo`}
+                        aria-label={`${project.title}, live demo`}
                         className={buttonVariants()}
                       >
                         Live Demo
@@ -137,7 +137,7 @@ export default function ProjectRow({
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`${project.title} — source on GitHub`}
+                        aria-label={`${project.title}, source on GitHub`}
                         className={buttonVariants({ variant: "outline" })}
                       >
                         GitHub
@@ -147,7 +147,7 @@ export default function ProjectRow({
                   )}
                   {!project.liveUrl && !project.githubUrl && (
                     <span className="text-sm font-light text-slate-400">
-                      In active development — demo and source coming soon.
+                      In active development. Demo and source coming soon.
                     </span>
                   )}
                 </div>

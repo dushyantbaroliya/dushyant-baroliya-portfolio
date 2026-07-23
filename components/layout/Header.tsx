@@ -44,7 +44,7 @@ export default function Header() {
     >
       <nav aria-label="Primary" className="flex place-items-center justify-between">
         {/* Identity + local time */}
-        <Link href="/" className="inline-block" aria-label={`${SITE.name} — home`}>
+        <Link href="/" className="inline-block" aria-label={`${SITE.name}, home`}>
           <div className="flex items-center gap-3 md:gap-4">
             <span className="font-display text-xl md:text-3xl leading-none text-tech-light">
               {SITE.initials}

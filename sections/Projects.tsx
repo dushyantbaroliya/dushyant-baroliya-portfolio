@@ -4,7 +4,7 @@ import { useState } from "react";
 import ProjectRow from "@/components/ProjectRow";
 import { PROJECTS } from "@/constants/content";
 
-/** The numbered project index — one row per project, one open at a time. */
+/** The numbered project index: one row per project, one open at a time. */
 export default function Projects() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 

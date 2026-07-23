@@ -46,7 +46,7 @@ export const SITE = {
   timeZone: "Asia/Kolkata",
   resumeUrl: "/files/Dushyant-Baroliya-Resume.pdf",
   description:
-    "Portfolio of Dushyant Baroliya — building AI products, market infrastructure in Rust and WebAssembly, and interactive essays on quantitative finance.",
+    "Portfolio of Dushyant Baroliya, building AI products, market infrastructure in Rust and WebAssembly, and interactive essays on quantitative finance.",
 } as const;
 
 export const SOCIALS: SocialLink[] = [
@@ -88,7 +88,7 @@ export const HERO = {
     { text: "market infrastructure", bold: true },
     { text: ", and " },
     { text: "interactive essays", bold: true },
-    { text: " — like a " },
+    { text: ", like a " },
     { text: "Rust matching engine", bold: true },
     { text: " that runs live in your browser. Everything below is " },
     { text: "real, tested, and deployed", bold: true },
@@ -168,7 +168,7 @@ export const PROJECTS: Project[] = [
     status: "In Progress",
     title: "LAZR",
     description:
-      "A privacy-first, local-first personal intelligence app: on-device AI that indexes your files, screenshots, and notes and answers questions about them — grounded only in your own data, with citations. No accounts, no telemetry, no data ever leaves the device. Currently running on-device with an airplane-mode guarantee as a hard test gate.",
+      "A privacy-first, local-first personal intelligence app: on-device AI that indexes your files, screenshots, and notes and answers questions about them, grounded only in your own data, with citations. No accounts, no telemetry, no data ever leaves the device. Currently running on-device with an airplane-mode guarantee as a hard test gate.",
     stack: ["Flutter", "Dart", "Riverpod", "SQLite", "On-Device LLM", "Vector Search"],
   },
   {
@@ -176,7 +176,7 @@ export const PROJECTS: Project[] = [
     category: "Quant Finance",
     title: "Ledger",
     description:
-      "A deterministic limit-order-book matching engine written in Rust and compiled to WebAssembly — a live market microstructure lab running entirely in your browser, with a terminal-grade depth ladder, tape, and order entry.",
+      "A deterministic limit-order-book matching engine written in Rust and compiled to WebAssembly: a live market microstructure lab running entirely in your browser, with a terminal-grade depth ladder, tape, and order entry.",
     stack: ["Rust", "WebAssembly", "TypeScript", "React", "Canvas API"],
     liveUrl: "https://dushyantbaroliya.github.io/ledger/",
     githubUrl: "https://github.com/dushyantbaroliya/ledger",
@@ -186,7 +186,7 @@ export const PROJECTS: Project[] = [
     category: "Interactive Essay",
     title: "Signal",
     description:
-      "An interactive essay on how options think — from the payoff hockey stick through the Greeks to the volatility smile, every figure hand-drawn in canvas and computed live, including a drag-to-rotate 3D volatility surface built without WebGL.",
+      "An interactive essay on how options think, from the payoff hockey stick through the Greeks to the volatility smile, every figure hand-drawn in canvas and computed live, including a drag-to-rotate 3D volatility surface built without WebGL.",
     stack: ["TypeScript", "Canvas API", "Vite", "Black-Scholes"],
     liveUrl: "https://dushyantbaroliya.github.io/signal/",
     githubUrl: "https://github.com/dushyantbaroliya/signal",

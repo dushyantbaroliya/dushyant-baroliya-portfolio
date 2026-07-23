@@ -47,7 +47,7 @@ export default function Contact() {
       setCopied(true);
       window.setTimeout(() => setCopied(false), 2000);
     } catch {
-      // Clipboard unavailable — the mailto link still works.
+      // Clipboard unavailable; the mailto link still works.
     }
   };
 

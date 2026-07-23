@@ -16,7 +16,7 @@ const CustomCursor = dynamic(() => import("@/components/cursor/CustomCursor"));
 
 const PreloaderContext = createContext(false);
 
-/** True once the intro preloader has finished — gates hero entrances. */
+/** True once the intro preloader has finished; gates hero entrances. */
 export function usePreloaderDone() {
   return useContext(PreloaderContext);
 }
