@@ -23,7 +23,7 @@ Everything personal lives in one file: [`constants/content.ts`](constants/conten
 
 Other swappable assets:
 
-- **Resume**: replace `public/files/Dushyant-Baroliya-Resume.pdf` (a placeholder PDF ships with the repo).
+- **Resume**: `public/files/Dushyant-Baroliya-Resume.pdf`, served from `SITE.resumeUrl`. Regenerate it with `python build_resume.py` in the sibling `resume/` project and copy the output here.
 - **Project screenshots**: add an `image: "/projects/foo.png"` field to any project in `constants/content.ts`; it replaces the generated placeholder art via `next/image`.
 - **Domain**: set `SITE.url` to your real domain for correct canonical/OG/sitemap URLs.
 
