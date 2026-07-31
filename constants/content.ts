@@ -178,6 +178,7 @@ export const PROJECTS: Project[] = [
     description:
       "A real-time classroom engagement system: a torch-free MediaPipe pipeline detects and anonymously tracks every student, then reads head pose, blinks, gaze, phone use and hand-raises and fuses them into an explainable 0–100 attention score. FastAPI + WebSocket backend, SQLite analytics, and a six-page React dashboard — verified end-to-end on real classroom footage, with face recognition deliberately excluded.",
     stack: ["Python", "MediaPipe", "OpenCV", "FastAPI", "React", "TypeScript"],
+    liveUrl: "https://dushyantbaroliya.github.io/classroom-attention-monitor/",
     githubUrl: "https://github.com/dushyantbaroliya/classroom-attention-monitor",
   },
   {
