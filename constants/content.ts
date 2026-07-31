@@ -172,6 +172,15 @@ export const PROJECTS: Project[] = [
     stack: ["Flutter", "Dart", "Riverpod", "SQLite", "On-Device LLM", "Vector Search"],
   },
   {
+    id: "classroom-attention-monitor",
+    category: "Computer Vision",
+    title: "Classroom Attention Monitor",
+    description:
+      "A real-time classroom engagement system: a torch-free MediaPipe pipeline detects and anonymously tracks every student, then reads head pose, blinks, gaze, phone use and hand-raises and fuses them into an explainable 0–100 attention score. FastAPI + WebSocket backend, SQLite analytics, and a six-page React dashboard — verified end-to-end on real classroom footage, with face recognition deliberately excluded.",
+    stack: ["Python", "MediaPipe", "OpenCV", "FastAPI", "React", "TypeScript"],
+    githubUrl: "https://github.com/dushyantbaroliya/classroom-attention-monitor",
+  },
+  {
     id: "ledger",
     category: "Quant Finance",
     title: "Ledger",
